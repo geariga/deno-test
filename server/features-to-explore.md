@@ -1,0 +1,20 @@
+Built-In Features to Explore in Deno
+- linter (deno lint)
+- formatter (deno fmt)
+- test runner (deno test)
+- test coverage (deno coverage)
+- compile to standalone executable (deno compile)
+- benchmarking performance using Deno.bench() (deno bench) [https://docs.deno.com/runtime/reference/cli/bench/]
+- jupyter kernel with access to packages
+    - initialize kernel (deno jupyter)
+    - create a .ipynb file
+    - ensure Deno is set as the runtime
+- React/Next with Deno backend
+    - deno run -A npm:create-next-app@latest my-next-app
+    - cd my-next-app
+    - deno task dev
+- Vite with Deno backend
+    - deno run -A npm:create-vite@latest
+    - cd my-vite-app
+    - deno install
+    - deno task dev

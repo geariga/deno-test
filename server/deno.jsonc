@@ -1,0 +1,59 @@
+{
+	"tasks": {
+		"dev": "deno run --watch src/main.ts",
+		"dev:allow": "deno run --allow-all --watch src/main.ts",
+		"debug": "deno run --inspect main.ts"
+	},
+	"lint": {
+		"include": ["src/"],
+		"exclude": ["dist/"]
+		// , "rules": {
+		//   "tags": ["recommended"],
+		//   "include": ["ban-untagged-todo"],
+		//   "exclude": ["no-unused-vars"]
+		// }
+	},
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 80,
+		"indentWidth": 4,
+		"semiColons": true,
+		"singleQuote": true,
+		"proseWrap": "preserve",
+		"include": ["src/"],
+		"exclude": ["dist/"]
+	},
+	"imports": {
+		// Standard Library https://jsr.io/@std
+		"@std/assert": "jsr:@std/assert@1", // https://jsr.io/@std/assert/doc
+		"@std/json": "jsr:@std/json", // https://jsr.io/@std/json/doc
+		"@std/jsonc": "jsr:@std/jsonc",
+		"@std/yaml": "jsr:@std/yaml", // https://jsr.io/@std/yaml/doc
+    "@std/toml": "jsr:@std/toml", // https://jsr.io/@std/toml/doc
+    "@std/csv": "jsr:@std/csv@1.0.4", // https://jsr.io/@std/csv/doc
+    "@std/text": "jsr:@std/text@1.0.8", // https://jsr.io/@std/text/doc
+    "@std/html": "jsr:@std/html@1.0.3", // https://jsr.io/@std/html/doc
+    "@std/collections": "jsr:@std/collections@1.0.9", // https://jsr.io/@std/collections/doc
+		"@std/media-types": "jsr:@std/media-types@1.1.0", // https://jsr.io/@std/media-types/doc
+    "@std/async": "jsr:@std/async", // https://jsr.io/@std/async/doc
+    "@std/data-structures": "jsr:@std/data-structures@1.0.4", // https://jsr.io/@std/data-structures/doc
+    "@std/fmt": "jsr:@std/fmt@1.0.3", // https://jsr.io/@std/fmt/doc 
+    "@std/path": "jsr:@std/path@^1.0.8",
+		"@std/http": "jsr:@std/http",
+		"@std/fs": "jsr:@std/fs",
+		"@std/encoding": "jsr:@std/encoding",
+		"@std/uuid": "jsr:@std/uuid",
+    
+    // Standard Library (Unstable)
+		"@std/log": "jsr:@std/log", // https://jsr.io/@std/log/doc
+    // "@std/datetime": "jsr:@std/datetime@0.225.2", // https://jsr.io/@std/datetime/doc
+    // "@std/random": "jsr:@std/random@0.1.0", // https://jsr.io/@std/random/doc
+    // "@std/webgpu": "jsr:@std/webgpu@0.224.7", // https://jsr.io/@std/webgpu/doc
+
+		// NPM
+		"express": "npm:express@^4.21.1"
+		// URL
+		// , "sqlite": "https://deno.land/x/sqlite@v3.9.1/mod.ts"
+	},
+	"nodeModuleDir": "auto"
+}
