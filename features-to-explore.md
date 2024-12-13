@@ -1,4 +1,6 @@
 Built-In Features to Explore in Deno
+- standard library
+- built in server w/ websockets
 - linter (deno lint)
 - formatter (deno fmt)
 - test runner (deno test)

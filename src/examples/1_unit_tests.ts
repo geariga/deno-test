@@ -1,4 +1,4 @@
-// run tests with "deno test --doc helpers.ts"
+// run tests with "deno test --doc src/examples/1_unit_tests.ts"
 //// the --doc flag will run the tests in the JSDoc comments
 
 /**

@@ -1,15 +1,14 @@
 // @deno-types="npm:@types/express"
 import express from 'express';
 import * as log from '@std/log';
-import * as helpers from './helpers.ts';
+import * as helpers from './examples/1_unit_tests.ts';
 import * as routes from './routes.ts';
 
-const app = express();
-
-app.use(express.json());
-
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
 if (import.meta.main) {
+	const app = express();
+
+	app.use(express.json());
+
 	app.get('/dog', routes.getRandomDogImage);
 
 	app.listen(3000, () => {
